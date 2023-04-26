@@ -1,6 +1,6 @@
 # envjson
 
-loads env json file and sets properties to env vars
+loads env json files and sets properties to env vars
 
 # Supported languages
 
