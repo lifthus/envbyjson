@@ -2,23 +2,43 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 
 	envjson "github.com/lifthus/envjson/go"
 )
 
 func main() {
-
-	err := envjson.LoadProp("c")
+	// loads env vars from env.json.
+	err := envjson.Load()
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
-	fmt.Printf("a=%s\n", os.Getenv("a"))
-	fmt.Printf("b=%s\n", os.Getenv("b"))
-	fmt.Printf("d=%s\n", os.Getenv("d"))
-	fmt.Printf("e=%s\n", os.Getenv("e"))
-	fmt.Printf("f=%s\n", os.Getenv("f"))
-	fmt.Printf("g=%s\n", os.Getenv("g"))
+	// loads env vars from env.json and env2.json.
+	err = envjson.Load("env.json", "env2.json")
+	if err != nil {
+		log.Fatal(err)
+	}
 
+	// loads env vars from env3.json's "C" property.
+	err = envjson.LoadProp("env3.json", "C")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// load env vars from the "C" property of env3.json and env4.json.
+	err = envjson.LoadProp("env3.json", "env4.json", "C")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("A=%s\n", os.Getenv("A"))
+	fmt.Printf("B=%s\n", os.Getenv("B"))
+	fmt.Printf("C=%s\n", os.Getenv("C"))
+	fmt.Printf("D=%s\n", os.Getenv("D"))
+	fmt.Printf("E=%s\n", os.Getenv("E"))
+	fmt.Printf("F=%s\n", os.Getenv("F"))
+	fmt.Printf("G=%s\n", os.Getenv("G"))
+	fmt.Printf("H=%s\n", os.Getenv("H"))
 }
