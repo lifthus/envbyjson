@@ -1,0 +1,9 @@
+{
+  "name": "envjson",
+  "version": "0.1.0",
+  "description": "the js project of envjson which loads env vars from json files.",
+  "main": "index.js",
+  "repository": "https://github.com/lifthus/envjson/tree/main/javascript",
+  "author": "lifthus",
+  "license": "MIT"
+}
