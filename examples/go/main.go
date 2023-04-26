@@ -3,14 +3,16 @@ package main
 import (
 	"fmt"
 	"os"
+
+	envjson "github.com/lifthus/envjson/go"
 )
 
 func main() {
 
-	//err := envjson.LoadProp("c")
-	// if err != nil {
-	// 	panic(err)
-	// }
+	err := envjson.LoadProp("c")
+	if err != nil {
+		panic(err)
+	}
 
 	fmt.Printf("a=%s\n", os.Getenv("a"))
 	fmt.Printf("b=%s\n", os.Getenv("b"))

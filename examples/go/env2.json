@@ -1,8 +1,4 @@
 {
-    "a":"abdasdb",
-    "b":"daffa",
-    "c": {
-        "f": "dafs",
-        "g": "dafs"
-    }
+    "A":"got A",
+    "B":"got B"
 }
