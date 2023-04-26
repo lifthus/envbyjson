@@ -55,6 +55,9 @@ func main() {
   
   // LoadProp loads properties(nested json) in "tmp" property in given json files and sets them to the env vars.
   err := envjson.LoadProp("env2.json", "env3.json", "tmp")
+  if err != nil {
+    log.Fatal("error loading configuration files")
+   }
   
 
   resultA := os.Getenv("A")
