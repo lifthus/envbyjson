@@ -50,8 +50,12 @@ import (
 func main() {
   err := envjson.Load()
   if err != nil {
-    log.Fatal("Error loading .env file")
+    log.Fatal("error loading env.json file")
   }
+  
+  // LoadProp loads properties(nested json) in "tmp" property in given json files and sets them to the env vars.
+  err := envjson.LoadProp("env2.json", "env3.json", "tmp")
+  
 
   resultA := os.Getenv("A")
 
