@@ -12,16 +12,25 @@ go get github.com/lifthus/envbyjson/go
 
 ## Usage
 
-Add your application configuration to json files.
-
-if you don't specify the file paths, envbyjson loads "env.json" in your project root directory.
+Add your application configuration to json files like
 
 ```shell
 {
   "A": "got A",
   "B": "got B"
 }
+
+or like
+
+{ 
+  "Parameters" : {
+    "A": "got A",
+    "B": "got B"
+    }
+}
 ```
+
+if you don't specify the file paths, envbyjson loads "env.json" in your project root directory.
 
 in your Go app you can do something like
 
@@ -41,8 +50,8 @@ func main() {
     log.Fatal("error loading env.json file")
   }
 
-  // LoadProp loads properties(nested json) in "tmp" property in given json files and sets them to the env vars.
-  err := envbyjson.LoadProp("env2.json", "env3.json", "tmp")
+  // LoadProp loads properties(nested json) in "Parameters" property in given json files and sets them to the env vars.
+  err := envbyjson.LoadProp("env2.json", "env3.json", "Parameters")
   if err != nil {
     log.Fatal("error loading configuration files")
    }
