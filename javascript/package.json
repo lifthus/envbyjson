@@ -1,16 +1,20 @@
 {
-  "name": "envjson",
+  "name": "envbyjson",
   "version": "0.1.0",
-  "author": "lifthus",
+  "author": {
+    "name": "lifthus",
+    "url" : "https://github.com/lifthus"
+  },
+
   "description": "the js project of envjson which loads env vars from json files.",
 
-  "main": "dist/envjson.js",
-  "types": "dist/envjson.d.ts",
+  "main": "dist/envbyjson.js",
+  "types": "dist/envbyjson.d.ts",
 
-  "homepage": "https://github.com/lifthus/envjson",
-  "repository": "https://github.com/lifthus/envjson/tree/main/javascript",
+  "homepage": "https://github.com/lifthus/envbyjson",
+  "repository": "https://github.com/lifthus/envbyjson/tree/main/javascript",
   "bugs": {
-    "url": "https://github.com/lifthus/envjson/issues"
+    "url": "https://github.com/lifthus/envbyjson/issues"
   },
   "license": "MIT",
   "scripts": {
@@ -34,6 +38,6 @@
     "env",
     "json",
     "dotenv",
-    "envjson"
+    "envbyjson"
   ]
 }
