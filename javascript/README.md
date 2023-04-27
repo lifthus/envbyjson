@@ -1,6 +1,6 @@
 # envbyjson
 
-the JavaScript project of [envjson](https://github.com/lifthus/envbyjson) which loads env vars from json files.
+the JavaScript project of [envbyjson](https://github.com/lifthus/envbyjson) which loads env vars from json files.
 
 ## Installation
 
