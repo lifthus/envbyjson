@@ -1,0 +1,26 @@
+{
+  "name": "envjson-example",
+  "version": "0.1.0",
+  "description": "usage example of envjson in js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifthus/envjson.git#main"
+  },
+  "keywords": [
+    "envjson"
+  ],
+  "author": "lifthus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lifthus/envjson/issues"
+  },
+  "homepage": "https://github.com/lifthus/envjson/tree/main#readme",
+  "type": "module",
+  "dependencies": {
+    "envjson": "file:../../javascript"
+  }
+}
