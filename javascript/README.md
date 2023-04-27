@@ -1,15 +1,15 @@
-# envjson
+# envbyjson
 
-the JavaScript project of [envjson](https://github.com/lifthus/envjson) which loads env vars from json files.
+the JavaScript project of [envjson](https://github.com/lifthus/envbyjson) which loads env vars from json files.
 
 ## Installation
 
 As a library
 
 ```shell
-npm install envjson
+npm install envbyjson
 
-yarn add envjson
+yarn add envbyjson
 ```
 
 ## Usage
