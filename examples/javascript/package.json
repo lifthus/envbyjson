@@ -21,6 +21,6 @@
   "homepage": "https://github.com/lifthus/envjson/tree/main#readme",
   "type": "module",
   "dependencies": {
-    "envjson": "file:../../javascript"
+    "envbyjson": "^0.2.0"
   }
 }
