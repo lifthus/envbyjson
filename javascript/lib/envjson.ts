@@ -14,6 +14,10 @@ import fs from "fs";
  * @param paths - json file paths
  */
 export const load = (...paths: string[]) => {
+  if (paths.length === 0) {
+    paths = ["env.json"];
+  }
+
   for (const path of paths) {
     // if wrong path is given, it throws an error
 
