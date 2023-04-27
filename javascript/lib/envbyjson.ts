@@ -8,8 +8,8 @@ import fs from "fs";
  * and it is synchronous and loads only utf8 encoded json files.
  *
  * example:
- * envjson.Load() // it loads env.json file by default
- * envjson.Load("env2.json", "env3.json")
+ * envbyjson.Load() // it loads env.json file by default
+ * envbyjson.Load("env2.json", "env3.json")
  *
  * @param paths - json file paths
  */
@@ -48,8 +48,8 @@ export const load = (...paths: string[]) => {
  *
  * example:
  *
- * envjson.LoadProp("prop1") // it loads "prop1" property from env.json file by default
- * envjson.LoadProp("env2.json", "env3.json", "prop1")
+ * envbyjson.LoadProp("prop1") // it loads "prop1" property from env.json file by default
+ * envbyjson.LoadProp("env2.json", "env3.json", "prop1")
  *
  *  @param params - property name and json file paths
  */
@@ -80,9 +80,9 @@ export const loadProp = (...params: string[]) => {
   }
 };
 
-const envjson = {
+const envbyjson = {
   load,
   loadProp,
 };
 
-export default envjson;
+export default envbyjson;

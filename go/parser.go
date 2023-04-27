@@ -1,4 +1,4 @@
-package envjson
+package envbyjson
 
 import (
 	"encoding/json"

@@ -4,31 +4,29 @@ import (
 	"fmt"
 	"log"
 	"os"
-
-	envjson "github.com/lifthus/envjson/go"
 )
 
 func main() {
 	// loads env vars from env.json.
-	err := envjson.Load()
+	err := envbyjson.Load()
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// loads env vars from env.json and env2.json.
-	err = envjson.Load("env.json", "env2.json")
+	err = envbyjson.Load("env.json", "env2.json")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// loads env vars from env3.json's "C" property.
-	err = envjson.LoadProp("env3.json", "C")
+	err = envbyjson.LoadProp("env3.json", "C")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// load env vars from the "C" property of env3.json and env4.json.
-	err = envjson.LoadProp("env3.json", "env4.json", "C")
+	err = envbyjson.LoadProp("env3.json", "env4.json", "C")
 	if err != nil {
 		log.Fatal(err)
 	}
