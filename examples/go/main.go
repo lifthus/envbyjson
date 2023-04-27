@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"log"
 	"os"
+
+	envbyjson "github.com/lifthus/envbyjson/go"
 )
 
 func main() {

@@ -1,3 +1,3 @@
-module github.com/lifthus/envbyjson/examples/go
+module github.com/lifthus/envbyjson/examples
 
 go 1.20
