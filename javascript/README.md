@@ -14,6 +14,28 @@ yarn add envbyjson
 
 ## Usage
 
+Add your application configuration to json files like
+
+```shell
+{
+  "A": "got A",
+  "B": "got B"
+}
+
+or like
+
+{ 
+  "Parameters" : {
+    "A": "got A",
+    "B": "got B"
+    }
+}
+```
+
+if you don't specify the file paths, envbyjson loads "env.json" in your project root directory.
+
+in your JS app you can do something like
+
 ```javascript
 import envbyjson from "envbyjson";
 
