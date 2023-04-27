@@ -58,19 +58,19 @@ export const loadProp = (...params: string[]) => {
     const envVars = require(path);
     // from specified property
     for (const k in envVars[propName]) {
-      if (typeof envVars[k] !== "string") {
+      if (typeof envVars[propName][k] !== "string") {
         throw Error(`property ${k} is not string`);
       }
       if (process.env[k] === undefined) {
-        process.env[k] = envVars[k];
+        process.env[k] = envVars[propName][k];
       }
     }
   }
 };
 
-const envjsonModule = {
+const envjson = {
   load,
   loadProp,
 };
 
-export default envjsonModule;
+export default envjson;

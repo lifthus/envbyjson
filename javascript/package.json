@@ -25,7 +25,10 @@
     "typescript": "^5.0.4"
   },
   "jest": {
-    "preset": "ts-jest"
+    "preset": "ts-jest",
+    "modulePaths": [
+      "lib/"
+    ]
   },
   "keywords": [
     "env",
