@@ -1,16 +1,13 @@
 {
   "name": "envbyjson",
-  "version": "0.2.0",
+  "version": "1.0.1",
   "author": {
     "name": "lifthus",
-    "url" : "https://github.com/lifthus"
+    "url": "https://github.com/lifthus"
   },
-
   "description": "the js project of envjson which loads env vars from json files.",
-
   "main": "dist/envbyjson.js",
   "types": "dist/envbyjson.d.ts",
-
   "homepage": "https://github.com/lifthus/envbyjson",
   "repository": "https://github.com/lifthus/envbyjson/tree/main/javascript",
   "bugs": {
