@@ -1,6 +1,6 @@
 # envbyjson [![Go Report Card](https://goreportcard.com/badge/github.com/lifthus/envjson/go)](https://goreportcard.com/report/github.com/lifthus/envjson/go)
 
-loads env json files and sets properties to env vars
+loads env json files and sets properties to env vars (supports multiple languages)
 
 ## Supported languages
 
